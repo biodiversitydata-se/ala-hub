@@ -20,7 +20,10 @@
 
     <logger name="grails.plugin.externalconfig.ExternalConfig" level="INFO" />
 
-    <logger name="au.org.ala" level="DEBUG" />
+    <!-- SBDI: this is to get rid of noise in the logs -->
+    <logger name="org.grails.config.NavigableMap" level="ERROR" />
+
+    <logger name="au.org.ala" level="WARN" />
 
     <root level="warn">
         <appender-ref ref="STDOUT" />
