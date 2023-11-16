@@ -82,6 +82,7 @@
         </div>
     </div>
 
+    <g:if test="${request.getAttribute("state") && request.getAttribute("state").size() > 1}">
     <div class="form-group">
         <label class="col-md-2 control-label" for="state"><g:message code="advancedsearch.table06col02.title" default="State/Territory"/></label>
         <div class="col-md-6">
@@ -89,6 +90,7 @@
             </select>
         </div>
     </div>
+    </g:if>
 
     <g:set var="autoPlaceholder" value="start typing and select from the autocomplete drop-down list"/>
     <g:if test="${request.getAttribute("cl1048") && request.getAttribute("cl1048").size() > 1}">
