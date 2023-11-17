@@ -121,11 +121,13 @@
                 </div>
             </div>
         </div>
+        <%-- SBDI: we do not have this service
         <div id="mydownloads">
             <a href="${grailsApplication?.config?.doiService?.baseUrl}/myDownloads" target="_blank"><g:message
                     code="download.confirm.myDownloadsLink"
                     default="My Downloads - View a list of all your previous downloads"/></a>
         </div>
+        --%>
     </div>
 </div>
 <!-- Copy download URL modal -->
