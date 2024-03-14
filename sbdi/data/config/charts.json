@@ -1,11 +1,12 @@
-{ "biocache" : {
-  "license" : {
-    "title": "By licence",
-    "chartType": "doughnut",
-    "emptyValueMsg": "Licence not specified",
-    "hideEmptyValues" : true,
-    "includeOther" : "false"
-  },
+{
+  "biocache" : {
+    "license" : {
+      "title": "By licence",
+      "chartType": "doughnut",
+      "emptyValueMsg": "Licence not specified",
+      "hideEmptyValues" : true,
+      "includeOther" : "false"
+    },
     "month" : {
       "title": "By month",
       "chartType": "bar",
@@ -21,31 +22,35 @@
       "includeOther" : "false"
     },
     "genus" : {
-        "title": "By genus",
-        "chartType": "doughnut",
-        "emptyValueMsg": "Genus not specified",
-        "hideEmptyValues" : true,
-        "includeOther" : "false"
+      "title": "By genus",
+      "chartType": "doughnut",
+      "emptyValueMsg": "Genus not specified",
+      "hideEmptyValues" : true,
+      "includeOther" : "false",
+      "filter": "fsort=count"
     },
     "family" : {
       "title": "By family",
       "chartType": "doughnut",
       "emptyValueMsg": "Family not specified",
       "hideEmptyValues" : true,
-      "includeOther" : "false"
+      "includeOther" : "false",
+      "filter": "fsort=count"
     },
     "assertions": {
       "title":"By data assertion",
       "chartType": "horizontal-bar",
       "emptyValueMsg":"Assertion not specified",
       "hideEmptyValues": true,
-      "includeOther" : "false"
+      "includeOther" : "false",
+      "growToFit": true
     },
-    "type_status":{
-	"title":"By type status (as % of all type specimens)",
-	"chartType": "doughnut",
-	"emptyValueMsg": "Type status not specified",
-	"hideEmptyValues": true,
+    "type_status": {
+      "title":"By type status (as % of all type specimens)",
+      "chartType": "doughnut",
+      "emptyValueMsg": "Type status not specified",
+      "hideEmptyValues": true,
       "includeOther" : "false"
     }
-}}
+  }
+}
