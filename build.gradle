@@ -32,6 +32,13 @@ repositories {
     mavenLocal()
     maven { url "https://nexus.ala.org.au/content/groups/public/" }
     maven { url "https://repo.grails.org/grails/core" }
+    maven {
+        url = "https://maven.pkg.github.com/biodiversitydata-se/biocache-hubs"
+        credentials {
+            username = "dummy"
+            password = System.getenv("READ_PACKAGES_TOKEN")
+        }
+    }
 }
 
 configurations {
@@ -137,7 +144,7 @@ dependencies {
     implementation "au.org.ala.plugins.grails:downloads-plugin:5.0.0"
 
     if (!inplace) {
-        implementation "au.org.ala.plugins.grails:biocache-hubs:7.1.1", noCache
+        implementation "au.org.ala.plugins.grails:biocache-hubs:7.1.1-0", noCache
     }
 }
 
