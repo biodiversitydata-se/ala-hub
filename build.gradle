@@ -1,5 +1,5 @@
 buildscript {
-    version "8.1.0"
+    version "8.2.0"
     group "au.org.ala"
 }
 
@@ -144,7 +144,7 @@ dependencies {
     implementation "au.org.ala.plugins.grails:downloads-plugin:5.1.0"
 
     if (!inplace) {
-        implementation "au.org.ala.plugins.grails:biocache-hubs:8.1.0-1", noCache
+        implementation "au.org.ala.plugins.grails:biocache-hubs:8.2.0", noCache
     }
 }
 
